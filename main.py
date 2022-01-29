@@ -21,6 +21,7 @@ def main():
 
 def attack_slime():
     mouse = Controller()
+    previous_position = mouse.position
 
     if config["target"] == "slime1":
         mouse.position = config["slime1"]
@@ -30,6 +31,7 @@ def attack_slime():
         config["target"] = "slime1"
 
     mouse.click(Button.left)
+    mouse.position = previous_position
 
 
 if __name__ == "__main__":
