@@ -32,6 +32,7 @@ def attack_slime():
 
     mouse.click(Button.left)
     mouse.position = previous_position
+    mouse.click(Button.left)
 
 
 if __name__ == "__main__":
